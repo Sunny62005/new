@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Pharande - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00f0ff',
+            secondary: '#ff007f',
+            glass: 'rgba(255, 255, 255, 0.05)',
+          },
+          backdropBlur: {
+            xs: '2px',
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white min-h-screen transition-colors duration-300 px-4 py-6">
+
+  <div class="max-w-5xl mx-auto space-y-12">
+
+    <!-- Toggle -->
+    <div class="flex justify-end">
+      <button id="theme-toggle" class="text-xl bg-glass backdrop-blur-sm px-4 py-2 rounded-lg border border-primary hover:bg-primary hover:text-black transition">
+        <span id="theme-icon">🌞</span>
+      </button>
+    </div>
+
+    <!-- Hero -->
+    <header class="text-center bg-glass rounded-2xl p-10 border border-primary shadow-lg backdrop-blur-sm">
+      <h1 class="text-5xl font-bold text-primary mb-2">Hi, I'm Sunny Pharande</h1>
+      <p class="text-lg text-gray-300">Aspiring Data Engineer | Creative Thinker | Problem Solver</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="flex flex-wrap justify-center gap-4 text-primary text-sm font-semibold">
+      <a href="#about" class="hover:text-secondary transition">About</a>
+      <a href="#achievements" class="hover:text-secondary transition">Achievements</a>
+      <a href="#goals" class="hover:text-secondary transition">Goals</a>
+      <a href="#personal" class="hover:text-secondary transition">Personal</a>
+      <a href="#github" class="hover:text-secondary transition">GitHub</a>
+      <a href="#contact" class="hover:text-secondary transition">Contact</a>
+    </nav>
+        <!-- Video -->
+<section id="video" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+  <h2 class="text-2xl text-secondary font-bold mb-4">Featured Video</h2>
+  <div class="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden border border-secondary">
+    <iframe 
+      class="w-full h-full"
+      src="https://youtu.be/VQRLujxTm3c?si=FkAwdLiROfrXIcsp" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+    <!-- About -->
+    <section id="about" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">About Me</h2>
+      <ul class="list-disc pl-5 space-y-2 text-gray-300">
+        <li><strong>Name:</strong> Sunny Pharande</li>
+        <li><strong>Location:</strong> Mumbai, India</li>
+        <li><strong>Education:</strong> Computer Engineering, SJCOEM</li>
+        <li><strong>Languages:</strong> C, Python, SQL</li>
+      </ul>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">Achievements</h2>
+      <ul id="achievements-list" class="list-disc pl-5 text-gray-300 space-y-2"></ul>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">Future Goals</h2>
+      <p class="text-gray-300">To become a skilled Data Engineer building scalable and intelligent systems for real-world applications.</p>
+    </section>
+
+    <!-- Personal -->
+    <section id="personal" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">Personal Side</h2>
+      <p><strong>Hobbies:</strong> Reading, Gaming</p>
+      <p><strong>Interests:</strong> Data Engineering, AI/ML, Cloud</p>
+      <p><strong>Books:</strong> "Deep Work" by Cal Newport</p>
+      <p><strong>Role Models:</strong> Steve Jobs, A.P.J. Abdul Kalam</p>
+    </section>
+
+    <!-- GitHub -->
+    <section id="github" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm text-center">
+      <h2 class="text-2xl text-secondary font-bold mb-4">GitHub</h2>
+      <a href="https://github.com/Sunny62005" target="_blank">
+        <button class="bg-primary hover:bg-secondary text-black font-semibold px-6 py-2 rounded-lg transition">Visit My GitHub →</button>
+      </a>
+    </section>
+
+    <!-- Map -->
+    <section id="map" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">Where I'm From</h2>
+      <div class="w-full h-72 overflow-hidden rounded-lg shadow-lg border border-secondary">
+        <iframe
+          class="w-full h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160999961!2d72.74109971032783!3d19.082197839706675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63d7f4fa8f1%3A0xdec18b2f9339172e!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1684103031584!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-glass rounded-xl p-6 border border-primary shadow backdrop-blur-sm">
+      <h2 class="text-2xl text-secondary font-bold mb-4">Contact Me</h2>
+      <ul class="space-y-2 text-gray-300">
+        <li><strong>Phone:</strong> <a href="tel:+918847782768" class="text-primary hover:text-secondary underline">+91 8847782768</a></li>
+        <li><strong>Email:</strong> <a href="mailto:123sunny2108@sjcem.edu.in" class="text-primary hover:text-secondary underline">123sunny2108@sjcem.edu.in</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/sunnypharande" class="text-primary hover:text-secondary underline" target="_blank">@sunnypharande</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const htmlEl = document.documentElement;
+
+    function updateIcon() {
+      themeIcon.textContent = htmlEl.classList.contains('dark') ? '🌙' : '🌞';
+    }
+
+    if (localStorage.getItem('theme') === 'dark') {
+      htmlEl.classList.add('dark');
+    }
+    updateIcon();
+
+    themeToggle.addEventListener('click', () => {
+      htmlEl.classList.toggle('dark');
+      localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+      updateIcon();
+    });
+  </script>
+
+  <!-- Achievements JSON Load -->
+  <script>
+    fetch('data.json')
+      .then(res => res.json())
+      .then(data => {
+        const achievementsList = document.getElementById('achievements-list');
+        data.achievements.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.title} (${item.year})`;
+          achievementsList.appendChild(li);
+        });
+      })
+      .catch(err => console.error("Error loading data.json", err));
+  </script>
+
+</body>
+</html>
